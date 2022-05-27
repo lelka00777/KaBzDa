@@ -54,7 +54,7 @@ export const OnOff = (props: OnOfPropsType) => {
 
 
             <div style={onStyle} onClick={() => props.onClick(true)}>On</div>
-            <div style={ofStyle} onClick={() => props.onClick(false)}>On</div>
+            <div style={ofStyle} onClick={() => props.onClick(false)}>Off</div>
             <div style={indicatorStyle}></div>
 
         </div>

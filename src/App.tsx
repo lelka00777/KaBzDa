@@ -20,11 +20,11 @@ function App() {
     let [on, setOn] = useState<boolean>(false)       /*useState 06 урок*/
 
 
-    const onClick = () => {                    /*useState 06 урок*/
+    // const onClick = () => {                    /*useState 06 урок*/
         // !on?setOn(true): setOn(false)
-        setOn(!on)  /* запись короче!!! почему просто на каждый клик меняет значение???????*/
+        // setOn(!on)  /* запись короче!!! почему просто на каждый клик меняет значение???????*/
         //
-    }
+    // }
 // if(!on){
 //     setOn(true)
 // }else{
@@ -37,8 +37,8 @@ function App() {
             {/*<OnOf />*/}
             {/*<UncontrolledOnOfOnOf on={on} onClick={setOn}/>*/}
 
-            {/*<OnOff on={on} onClick={setOn}/>*/}
-            <UnconrolledOnOff onChange={setOn}/>{on.toString()}
+            <OnOff on={on} onClick={setOn}/>
+            {/*<UnconrolledOnOff onChange={setOn}/>{on.toString()}*/}
             {/*<OnOffCallback on={on} callback={onClick}/>  /!*useState 06 урок*!/*/}
 
             {/*   <OnOffState />*/}

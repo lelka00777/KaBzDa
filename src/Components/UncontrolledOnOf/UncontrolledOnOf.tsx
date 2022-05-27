@@ -55,9 +55,9 @@ export const UnconrolledOnOff = (props: OnOfPropsType) => {
 
     return (<div>
 
-           {/* <div style={onStyle} onClick={onCliked}>On</div>
+            <div style={onStyle} onClick={onCliked}>On</div>
             <div style={ofStyle} onClick={ofCliked}>Off</div>
-            <div style={indicatorStyle}></div>*/}
+            <div style={indicatorStyle}></div>
 
         </div>
     );
