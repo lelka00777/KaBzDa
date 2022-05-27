@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>OnOf.tsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ff6d7e;}
+.s1 { color: #f2fffc;}
+.s2 { color: #798384;}
+.s3 { color: #ffed72;}
+.s4 { color: #6b7678; font-style: italic;}
+.s5 { color: #bababa;}
+</style>
+</head>
+<body bgcolor="#273136">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+OnOf.tsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React</span><span class="s2">, {</span><span class="s1">useState</span><span class="s2">} </span><span class="s1">from </span><span class="s3">'react'</span><span class="s2">;</span>
+
+<span class="s1">type OnOfPropsType </span><span class="s0">= </span><span class="s2">{</span>
+    <span class="s1">on</span><span class="s0">: </span><span class="s1">boolean</span>
+    <span class="s1">onClick</span><span class="s0">: </span><span class="s2">(</span><span class="s1">on</span><span class="s0">: </span><span class="s1">boolean</span><span class="s2">) </span><span class="s0">=&gt; void</span>
+<span class="s2">}</span>
+
+
+<span class="s0">export const </span><span class="s1">OnOff </span><span class="s0">= </span><span class="s2">(</span><span class="s1">props</span><span class="s0">: </span><span class="s1">OnOfPropsType</span><span class="s2">) </span><span class="s0">=&gt; </span><span class="s2">{</span>
+
+    <span class="s4">// let [on,setOn] = useState(false)</span>
+
+    <span class="s0">const </span><span class="s1">onStyle </span><span class="s0">= </span><span class="s2">{</span>
+        <span class="s1">width</span><span class="s0">: </span><span class="s3">&quot;30px&quot;</span><span class="s2">,</span>
+        <span class="s1">height</span><span class="s0">: </span><span class="s3">&quot;20px&quot;</span><span class="s2">,</span>
+        <span class="s1">border</span><span class="s0">: </span><span class="s3">&quot;1px solid black&quot;</span><span class="s2">,</span>
+        <span class="s1">display</span><span class="s0">: </span><span class="s3">'inline-block'</span><span class="s2">,</span>
+        <span class="s1">padding</span><span class="s0">: </span><span class="s3">'2px'</span><span class="s2">,</span>
+        <span class="s1">backgroundColor</span><span class="s0">: </span><span class="s1">props</span><span class="s2">.</span><span class="s1">on </span><span class="s0">? </span><span class="s3">'green' </span><span class="s0">: </span><span class="s3">'white'</span><span class="s2">,</span>
+        <span class="s1">color</span><span class="s0">: </span><span class="s3">'black'</span><span class="s2">,</span>
+
+    <span class="s2">}</span>
+    <span class="s0">const </span><span class="s1">ofStyle </span><span class="s0">= </span><span class="s2">{</span>
+        <span class="s1">width</span><span class="s0">: </span><span class="s3">&quot;30px&quot;</span><span class="s2">,</span>
+        <span class="s1">height</span><span class="s0">: </span><span class="s3">&quot;20px&quot;</span><span class="s2">,</span>
+        <span class="s1">border</span><span class="s0">: </span><span class="s3">&quot;1px solid black&quot;</span><span class="s2">,</span>
+        <span class="s1">display</span><span class="s0">: </span><span class="s3">'inline-block'</span><span class="s2">,</span>
+        <span class="s1">padding</span><span class="s0">: </span><span class="s3">'2px'</span><span class="s2">,</span>
+        <span class="s1">marginLeft</span><span class="s0">: </span><span class="s3">'5px'</span><span class="s2">,</span>
+        <span class="s1">backgroundColor</span><span class="s0">: </span><span class="s1">props</span><span class="s2">.</span><span class="s1">on </span><span class="s0">? </span><span class="s3">'white' </span><span class="s0">: </span><span class="s3">'red'</span><span class="s2">,</span>
+        <span class="s1">color</span><span class="s0">: </span><span class="s3">'black'</span>
+
+    <span class="s2">}</span>
+    <span class="s0">const </span><span class="s1">indicatorStyle </span><span class="s0">= </span><span class="s2">{</span>
+        <span class="s1">width</span><span class="s0">: </span><span class="s3">&quot;10px&quot;</span><span class="s2">,</span>
+        <span class="s1">height</span><span class="s0">: </span><span class="s3">&quot;10px&quot;</span><span class="s2">,</span>
+        <span class="s1">border</span><span class="s0">: </span><span class="s3">&quot;1px solid black&quot;</span><span class="s2">,</span>
+        <span class="s1">borderRadius</span><span class="s0">: </span><span class="s3">'5px'</span><span class="s2">,</span>
+        <span class="s1">display</span><span class="s0">: </span><span class="s3">'inline-block'</span><span class="s2">,</span>
+        <span class="s1">marginLeft</span><span class="s0">: </span><span class="s3">'5px'</span><span class="s2">,</span>
+        <span class="s1">backgroundColor</span><span class="s0">: </span><span class="s1">props</span><span class="s2">.</span><span class="s1">on </span><span class="s0">? </span><span class="s3">'green' </span><span class="s0">: </span><span class="s3">'red'</span>
+    <span class="s2">}</span>
+
+
+<span class="s4">//     const onClickHandler =()=&gt; {</span>
+<span class="s4">//         // props.callback()</span>
+<span class="s4">// }</span>
+
+    <span class="s0">return </span><span class="s2">(&lt;</span><span class="s0">div</span><span class="s2">&gt;</span>
+
+            <span class="s2">{</span><span class="s4">/*  &lt;div style={onStyle} onClick={props.onClick}&gt;On&lt;/div&gt;  Мой вариант 
+            &lt;div style={ofStyle} onClick={props.onClick}&gt;On&lt;/div&gt; 
+            &lt;div style={indicatorStyle}&gt;&lt;/div&gt;*/</span><span class="s2">}</span>
+
+
+            <span class="s2">&lt;</span><span class="s0">div </span><span class="s5">style</span><span class="s3">=</span><span class="s2">{</span><span class="s1">onStyle</span><span class="s2">} </span><span class="s5">onClick</span><span class="s3">=</span><span class="s2">{() </span><span class="s0">=&gt; </span><span class="s1">props</span><span class="s2">.</span><span class="s1">onClick</span><span class="s2">(</span><span class="s0">true</span><span class="s2">)}&gt;</span><span class="s1">On</span><span class="s2">&lt;/</span><span class="s0">div</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s0">div </span><span class="s5">style</span><span class="s3">=</span><span class="s2">{</span><span class="s1">ofStyle</span><span class="s2">} </span><span class="s5">onClick</span><span class="s3">=</span><span class="s2">{() </span><span class="s0">=&gt; </span><span class="s1">props</span><span class="s2">.</span><span class="s1">onClick</span><span class="s2">(</span><span class="s0">false</span><span class="s2">)}&gt;</span><span class="s1">On</span><span class="s2">&lt;/</span><span class="s0">div</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s0">div </span><span class="s5">style</span><span class="s3">=</span><span class="s2">{</span><span class="s1">indicatorStyle</span><span class="s2">}&gt;&lt;/</span><span class="s0">div</span><span class="s2">&gt;</span>
+
+        <span class="s2">&lt;/</span><span class="s0">div</span><span class="s2">&gt;</span>
+    <span class="s2">);</span>
+<span class="s2">};</span>
+
+</pre>
+</body>
+</html>
