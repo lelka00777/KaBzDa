@@ -28,7 +28,7 @@ function App() {
 // if(!on){
 //     setOn(true)
 // }else{
-//     setOn(false)     delete
+//     setOn(false)
 // }
 //    }
 
@@ -49,7 +49,7 @@ function App() {
                       onClick={() => setAcordionColapsed(!acordionColapsed)}/>
 
             {/*<UncontrollendRating />*/}
-            {/*      <Rating value={rattingValue} onClick={setRttingValue}/>*!/*/}
+            {/*      <Rating value={rattingValue} onClick={setRttingValue}/>*/}
 
 
         </div>
