@@ -33,7 +33,7 @@ function Acordiontitle(props: AcordionPropstitle) {
     console.log('acordiontitle rendering')
     return (
         <div>
-            <h3 onClick={props.onClick}>{props.title}</h3>
+            <h3 onClick={(e)=>props.onClick()}>{props.title}</h3>
         </div>)
 }
 
