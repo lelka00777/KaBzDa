@@ -9,6 +9,8 @@ import {Rating, RattingValueType} from "./Components/Rating/Rating";
 import {UncontrollendRating} from "./Components/Rating/UncontrolledRatting";
 import {UnconrolledOnOff} from "./Components/UncontrolledOnOf/UncontrolledOnOf";
 import {OnOff} from "./Components/oNoFF/OnOf";
+import {ButtonAnimation} from "./Components/ButtonAnimation/ButtonAnimation";
+import {NeonSocialIcon} from "./Components/NeonSocialIcon/NeonSocialIcon";
 
 
 function App() {
@@ -51,7 +53,8 @@ function App() {
             {/*<UncontrollendRating />*/}
             {/*      <Rating value={rattingValue} onClick={setRttingValue}/>*/}
 
-
+            <ButtonAnimation />
+            <NeonSocialIcon />
         </div>
     );
 }
