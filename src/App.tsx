@@ -11,6 +11,7 @@ import {UnconrolledOnOff} from "./Components/UncontrolledOnOf/UncontrolledOnOf";
 import {OnOff} from "./Components/oNoFF/OnOf";
 import {ButtonAnimation} from "./Components/ButtonAnimation/ButtonAnimation";
 import {NeonSocialIcon} from "./Components/NeonSocialIcon/NeonSocialIcon";
+import {ImgBorder} from "./Components/Img/ImgBorder";
 
 
 function App() {
@@ -39,22 +40,23 @@ function App() {
             {/*<OnOf />*/}
             {/*<UncontrolledOnOfOnOf on={on} onClick={setOn}/>*/}
 
-            <OnOff on={on} onClick={setOn}/>
+            {/*<OnOff on={on} onClick={setOn}/>*/}
             {/*<UnconrolledOnOff onChange={setOn}/>{on.toString()}*/}
             {/*<OnOffCallback on={on} callback={onClick}/>  /!*useState 06 урок*!/*/}
 
             {/*   <OnOffState />*/}
-            <UncontrollledAccordion titleValue={'--Menu--'}/>
+            {/*<UncontrollledAccordion titleValue={'--Menu--'}/>*/}
 
-            <Acordion titleValue={'--BlaBla--'}
-                      colapsed={acordionColapsed}
-                      onClick={() => setAcordionColapsed(!acordionColapsed)}/>
+            {/*<Acordion titleValue={'--BlaBla--'}*/}
+            {/*          colapsed={acordionColapsed}*/}
+            {/*          onClick={() => setAcordionColapsed(!acordionColapsed)}/>*/}
 
             {/*<UncontrollendRating />*/}
             {/*      <Rating value={rattingValue} onClick={setRttingValue}/>*/}
 
-            <ButtonAnimation />
-            <NeonSocialIcon />
+            {/*<ButtonAnimation />*/}
+            {/*<NeonSocialIcon />*/}
+            <ImgBorder />
         </div>
     );
 }

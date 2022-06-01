@@ -1,0 +1,94 @@
+.borderimg {
+
+    border: 10px solid transparent;
+    padding: 15px;
+    /*border-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vknv1MVsCQlgEp5WxERLEPT129C-0yy0umodIhwColb18dEqTVQ6InbNmDdY8PLvgtg&usqp=CAU') ;*/
+    background: #015fea;
+    opacity: 0.9;
+}
+
+.borderimg:hover {
+    opacity: 0.5;
+}
+img {
+    margin: auto;
+    width: 80%;
+    border: 3px solid #562727;
+    padding: 10px;
+    border-radius: 8px;
+}
+body {
+    background: #015fea;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+p {
+    padding: 50px 50px 50px 30px;
+    text-align: justify; /* выравнивание текста */
+    word-spacing: 5px; /*растояния между словами*/
+    line-height: 1.5;
+    font-family: "Noto Sans", sans-serif;}
+
+.content {
+    background: #015fea;
+
+}
+
+/* цвет на клик*/
+p:active {
+    color: #39ee10;
+}
+
+/*цвет при наведении мышью*/
+p:hover {
+    color: #39ee10;
+}
+
+/*a:link {
+    color: #a1e305;
+}*/
+
+/*цвет ссылки*/
+a:visited {
+    color: #f8f8f8;
+}
+
+/*цвет при клике ссылки*/
+p:active {
+    color: #ffffff;
+    width: 60%;
+    border-radius: 50%;
+}
+.flex_container > div {
+    background-color: #015fea;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    color: black;
+}
+h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 15px;
+    /*text-shadow: 2px 2px 4px #f100e5*/
+    text-shadow: 1px 1px 2px #a78080, 0 0 25px #1aca14, 0 0 5px #8b0000; /* Дополнительные примеры теней для текста*/
+}
+
+h1:hover {
+
+    text-decoration: none;
+    letter-spacing: 15px;
+    /*text-shadow: 2px 2px 4px #f100e5*/
+    text-shadow: 1px 1px 2px #100d0d, 0 0 25px #02f82a, 0 0 5px #b2f105; /*Дополнительные примеры теней для текста*/
+}
+
+h2 {
+    /*font-family: "Trirong", serif;*/
+    /*font-family: "Sofia", sans-serif;*/
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 15px;
+}
+
